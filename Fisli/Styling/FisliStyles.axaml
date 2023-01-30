@@ -1,0 +1,35 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Width="300" Padding="20">
+            <!-- Add Controls for Previewer Here -->
+            <Slider Width="200" Maximum="100" Minimum="0" Value="30" />
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="TextBlock">
+        <Setter Property="Foreground" Value="#5B7B34" />
+    </Style>
+    <Style Selector="PathIcon">
+        <Setter Property="Foreground" Value="#5B7B34" />
+    </Style>
+
+    <Style Selector="Button.MintStyle">
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="BorderBrush" Value="#C7EA91" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Background" Value="#CEFF91" />
+    </Style>
+    <Style Selector="TextBox.MintStyle">
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="BorderBrush" Value="#DEF2BF" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Background" Value="#E4FFC3" />
+    </Style>
+    <Style Selector="Border.MintStyle">
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="BorderBrush" Value="#C7EA91" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Background" Value="#CEFF91" />
+    </Style>
+</Styles>

@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Fisli.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="745" d:DesignHeight="360"
+        x:Class="Fisli.Views.MainWindow"
+        Icon="/Assets/app-icon.ico"
+        Title="Fisli"
+        Width="800"
+        MinWidth="745"
+        Height="400"
+        MinHeight="360"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaTitleBarHeightHint="30">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+    <Panel>
+        <UserControl>
+            <vm:MainContentViewModel />
+        </UserControl>
+    </Panel>
+</Window>

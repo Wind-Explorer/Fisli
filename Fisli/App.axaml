@@ -1,0 +1,25 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:Fisli"
+             xmlns:vm="using:Fisli.ViewModels"
+             x:Class="Fisli.App"
+             Name="Fisli">
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Application.DataTemplates>
+        <local:ViewLocator />
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme Mode="Light" />
+        <StyleInclude Source="/Icons.axaml" />
+    </Application.Styles>
+
+    <NativeMenu.Menu>
+        <NativeMenu>
+            <NativeMenuItem Header="About Fisli" Click="AboutFisliButton_OnClick" />
+        </NativeMenu>
+    </NativeMenu.Menu>
+</Application>

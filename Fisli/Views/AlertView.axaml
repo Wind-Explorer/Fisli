@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Fisli.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="150"
+             x:Class="Fisli.Views.AlertView">
+    <Design.DataContext>
+        <vm:AlertViewModel />
+    </Design.DataContext>
+    <UserControl.Styles>
+        <StyleInclude Source="/Styling/FisliStyles.axaml" />
+    </UserControl.Styles>
+    <Panel>
+        <Panel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#F8FFEF" IsHitTestVisible="False" />
+        <Grid RowDefinitions="30,*">
+            <Panel IsHitTestVisible="False" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Alert" />
+            </Panel>
+            <Grid RowDefinitions="*,Auto" Grid.Row="1">
+                <Grid Grid.Row="0" ColumnDefinitions="Auto,*">
+                    <PathIcon Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left"
+                              Data="{StaticResource warning_regular}" Margin="20" Width="50" Height="50"
+                              Foreground="#EE8888" />
+                    <ScrollViewer Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"
+                                  Margin="0,0,0,10" MaxWidth="300">
+                        <TextBlock Text="{Binding AlertMessage}" FontWeight="SemiBold" TextWrapping="Wrap" />
+                    </ScrollViewer>
+                </Grid>
+                <Button Grid.Row="1" Command="{Binding CloseAlertWindow}" HorizontalAlignment="Right"
+                        Classes="MintStyle" Margin="10" Content="Okay" HorizontalContentAlignment="Center"
+                        MinWidth="80" />
+            </Grid>
+        </Grid>
+    </Panel>
+</UserControl>

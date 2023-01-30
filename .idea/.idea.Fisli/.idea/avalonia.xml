@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Fisli/App.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Icons.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Styling/FisliStyles.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Views/AboutFisli.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Views/AboutFisliView.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Views/AlertView.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Views/AlertWindow.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Views/MainContentView.axaml" value="Fisli/Fisli.csproj" />
+        <entry key="Fisli/Views/MainWindow.axaml" value="Fisli/Fisli.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
