@@ -20,6 +20,12 @@
         <Setter Property="BorderThickness" Value="2" />
         <Setter Property="Background" Value="#CEFF91" />
     </Style>
+    <Style Selector="Button.MintStyle:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="BorderBrush" Value="#C7EA91" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Background" Value="#E2FFBC" />
+    </Style>
     <Style Selector="TextBox.MintStyle">
         <Setter Property="CornerRadius" Value="8" />
         <Setter Property="BorderBrush" Value="#DEF2BF" />

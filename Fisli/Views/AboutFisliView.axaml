@@ -28,12 +28,15 @@
                     </StackPanel>
                     <Image Source="/Assets/app-icon.png" Width="90" Height="90" HorizontalAlignment="Right"
                            VerticalAlignment="Top" />
-                    <TextBlock Text="Made in PRC" VerticalAlignment="Bottom" HorizontalAlignment="Left"
-                               FontWeight="SemiBold" />
-                    <TextBlock Text="v1.0" VerticalAlignment="Bottom" HorizontalAlignment="Center"
-                               FontWeight="SemiLight" />
-                    <TextBlock Text="By Adam C" VerticalAlignment="Bottom" HorizontalAlignment="Right"
-                               FontWeight="SemiBold" />
+                    <Panel Margin="0,0,0,20">
+                        <TextBlock Text="Made in PRC" VerticalAlignment="Bottom" HorizontalAlignment="Left"
+                                   FontWeight="SemiBold" />
+                        <TextBlock Text="v1.0" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                                   FontWeight="SemiLight" />
+                        <TextBlock Text="By Adam C" VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                                   FontWeight="SemiBold" />
+                    </Panel>
+                    <TextBlock Text="https://www.github.com/wind-explorer" Opacity="0.7" FontSize="12" FontWeight="SemiLight" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
                 </Panel>
             </Border>
         </Grid>

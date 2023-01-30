@@ -115,7 +115,10 @@
                                         <Grid Grid.Column="1" ColumnDefinitions="*,32">
                                             <TextBox Grid.Column="0" Text="{Binding OutputFolder}" Margin="0,0,10,0"
                                                      Classes="MintStyle" Watermark="Location of output folder"
-                                                     Width="220" Height="30" />
+                                                     Width="220" Height="30" IsHitTestVisible="False"/>
+                                            <TextBox Grid.Column="0" Text="{Binding OutputFolder}" Margin="0,0,10,0"
+                                                     Classes="MintStyle" Watermark="Location of output folder"
+                                                     Width="220" Height="30" Opacity="0.2"/>
                                             <Button Grid.Column="1" Classes="MintStyle" Height="32"
                                                     Command="{Binding SelectOutputFolder}">
                                                 <PathIcon Data="{StaticResource folder_open_regular}" />
@@ -151,7 +154,10 @@
                                         <Grid Grid.Column="1" ColumnDefinitions="*,32">
                                             <TextBox Grid.Column="0" Text="{Binding OutputFolder}" Margin="0,0,10,0"
                                                      Classes="MintStyle" Watermark="Location of output folder"
-                                                     Width="220" Height="30" />
+                                                     Width="220" Height="30" IsHitTestVisible="False"/>
+                                            <TextBox Grid.Column="0" Text="{Binding OutputFolder}" Margin="0,0,10,0"
+                                                     Classes="MintStyle" Watermark="Location of output folder"
+                                                     Width="220" Height="30" Opacity="0.2"/>
                                             <Button Grid.Column="1" Classes="MintStyle" Height="32"
                                                     Command="{Binding SelectOutputFolder}">
                                                 <PathIcon Data="{StaticResource folder_open_regular}" />
@@ -165,7 +171,10 @@
                                                    HorizontalAlignment="Left" VerticalAlignment="Center" />
                                         <TextBox Grid.Column="1" Text="{Binding OutputFileName}"
                                                  Classes="MintStyle" Watermark="Name of output file" Width="260"
-                                                 Height="30" />
+                                                 Height="30" IsHitTestVisible="False"/>
+                                        <TextBox Grid.Column="1" Text="{Binding OutputFileName}"
+                                                 Classes="MintStyle" Watermark="Name of output file" Width="260"
+                                                 Height="30" Opacity="0.2"/>
                                     </Grid>
                                 </Grid>
                             </Panel>
